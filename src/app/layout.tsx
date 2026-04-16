@@ -1,11 +1,10 @@
 import type { Metadata } from "next";
 import "./globals.css";
-import Navbar from "@/components/Navbar";
-import Footer from "@/components/Footer";
+import { Toaster } from "react-hot-toast";
 
 export const metadata: Metadata = {
-  title: "LUMIRA | Premium Modern Fashion",
-  description: "Experience the pinnacle of minimalist craftsmanship and timeless style with LUMIRA.",
+  title: "Digital Khata | Premium Business Ledger",
+  description: "Modern, fast, and secure business account tracking and financial management.",
 };
 
 export default function RootLayout({
@@ -15,12 +14,9 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en">
-      <body className="antialiased min-h-screen flex flex-col">
-        <Navbar />
-        <main className="flex-grow pt-20">
-          {children}
-        </main>
-        <Footer />
+      <body className="antialiased min-h-screen">
+        <Toaster position="top-center" reverseOrder={false} />
+        {children}
       </body>
     </html>
   );
