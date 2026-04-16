@@ -1,0 +1,21 @@
+{
+  "default_branch": "main",
+  "branches": [
+    "authentication",
+    "authentication-clean",
+    "main",
+    "origin"
+  ],
+  "parent": {
+    "authentication": "main",
+    "authentication-clean": "authentication",
+    "main": null,
+    "origin": "main"
+  },
+  "order": [
+    "main",
+    "authentication",
+    "origin",
+    "authentication-clean"
+  ]
+}
