@@ -50,7 +50,7 @@ export default function CustomerLedgerPage() {
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         
         {/* Navigation & Header */}
-        <div className="mb-11 flex flex-col md:flex-row md:items-center justify-between gap-6">
+        <div className="mb-10 flex flex-col md:flex-row md:items-center justify-between gap-6">
           <div className="flex items-center gap-4">
             <Link 
               href="/"
